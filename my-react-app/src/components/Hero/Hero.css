@@ -1,0 +1,122 @@
+/* Hero section with blue background */
+.hero {
+    background-image: url("../../assets/Hero.jpg"); /* Replace with your background image */
+    background-size: cover;
+    background-position: full;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* Hero content container */
+.hero-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left:  2rem;
+    width: 100%;
+}
+
+/* Circular Image with Bright Blue Border & Shine */
+.image-container .image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 5px solid #00f; /* Bright blue border */
+  object-fit: cover;
+  box-shadow: 0 0 40px 15px #00f; /* Blue glowing effect */
+}
+.image-container{
+    margin: 0%;
+    display: flex;
+    padding: 0%;
+    width: 30%;
+}
+.name {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #fff; /* White for strong contrast */
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Light cyan glow */
+}
+
+/* Profession styling - A slightly soft blue to fit theme */
+.hero-message {
+    display: flex;
+    font-size: 3rem;
+    flex-direction: column;
+    color: #ce34ac;
+    margin: 4rem;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Light cyan glow */
+}
+
+.hero-message h2 {
+    font-size: 4rem;
+    font-weight: 500;
+    color: #e0c1bc;
+    margin: 0%;
+    font-family: poppins;
+    text-shadow: 0 0 10px rgba(116, 146, 123, 0.8); /* Light cyan glow */
+}
+.hero-message .name {
+    font-size: 9rem;
+    font-weight: 800;
+    color: #d9dfe4;
+    font-family: poppins;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Light cyan glow */
+}
+
+@media screen and (max-width: 768px) {
+    .hero-content {
+        flex-direction: column; /* Stack items on mobile */
+        text-align: center;
+        margin-left: 0;
+        margin-top: 4rem;
+    }
+
+    .image-container {
+        width: 50%; /* Resize for smaller screens */
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+    .hero-message {
+        font-size: 1rem;
+        margin: 0%;
+    }
+
+    .hero-message h2 {
+        font-size: 1rem;
+        margin: 0%;
+        padding: 0%;
+    }
+    .hero-message .name {
+        font-size: 2rem;
+        margin: 0%;
+        padding: 0%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image-container {
+        width: 50%; /* Further resize for extra small screens */
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .hero-message h2 {
+        font-size: 1rem;
+    }
+    .hero-content {
+        flex-direction: column; /* Stack items on mobile */
+        text-align: center;
+        margin-left: 0%;
+        margin-top: 4rem;
+        padding-left: 0%;
+        width: 100%;
+        height: 100%;
+    }
+    
+}
