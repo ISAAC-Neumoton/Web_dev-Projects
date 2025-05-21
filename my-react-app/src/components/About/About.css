@@ -1,0 +1,67 @@
+.about {
+    margin-top: 10%;
+  display: flex;
+  flex-direction: column; /* Makes `.about` a column layout */
+  align-items: center; /* Centers items horizontally */
+}
+.about h1 {
+  font-size: 6rem;
+  font-family: poppins;
+  color: white;
+  text-align: center;
+  padding: 0%;
+  margin: 0; /* Removes default margin */
+}
+.about hr{
+    color: #ffffff;
+    width: 10%;
+
+}
+.about-content {
+  display: flex;
+  flex-direction: row; /* Makes `.about-content` a row layout */
+  justify-content: space-between; /* Distributes items evenly */
+}
+
+.about-biography {
+    width: 50%; /* Sets the width of the biography section */
+    font-size: 2rem;
+    font-family: poppins;
+    color: white;
+    text-align: center;
+    padding: 10%;
+    gap: 1rem; /* Adds space between items */
+    display: flex;
+    flex-direction: column; /* Makes `.about-biography` a column layout */
+    justify-content: center; /* Centers items vertically */
+    align-items: center; /* Centers items horizontally */
+}
+.about-biography P {
+    
+    font-size: 1.5rem;
+    color: #d9dfe4;
+    font-family: poppins;
+    text-align: center;
+    padding: 0%;
+    margin: 0; /* Removes default margin */
+}
+about-image {
+  width: 50%; /* Sets the width of the image section */
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center;
+  
+}
+.about-image img {
+  width: 100%; /* Sets the image to take up the full width of its container */
+  height: auto; /* Maintains the aspect ratio of the image */
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+  margin: 1rem;
+  margin-left: 2rem; /* Makes the image circular */
+}
+
+.about-image img:hover {
+  transform: scale(1.05); /* Slightly enlarges the image on hover */
+  transition: transform 0.3s ease; /* Smooth transition effect */
+}
