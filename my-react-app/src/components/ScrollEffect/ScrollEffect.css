@@ -1,0 +1,10 @@
+.scroll-section {
+  opacity: 0;
+  transform: translateY(50px); /* Starts below */
+  transition: all 0.6s ease-in-out;
+}
+
+.scroll-section.visible {
+  opacity: 1;
+  transform: translateY(0); /* Moves into place */
+}

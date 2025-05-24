@@ -1,0 +1,45 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width:70%;
+  margin: auto;
+  padding: 40px 0;
+  text-align: center;
+}
+.portfolio hr { 
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+}
+.portfolio h1 {
+  font-size: 6rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.slick-slider {
+  width: 100%;
+  max-width: 100%;
+  margin: auto; /* Centers the slider */
+}
+
+.slick-list {
+  overflow: hidden; /* Ensures content stays inside viewport */
+}
+
+.slick-track {
+  display: flex;
+  justify-content: center;
+  height: 30vh; /* Ensures slides align to the middle */
+}
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px; /* Ensures no extra spacing between slides */
+}

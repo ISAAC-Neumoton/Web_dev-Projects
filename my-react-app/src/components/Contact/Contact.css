@@ -1,0 +1,100 @@
+.contact-container {
+    position: relative; /* Allows absolute positioning of watermark */
+    display: flex;
+    flex-direction: row; /* Places contact info & form in a row */
+    justify-content: space-between; /* Distributes content evenly */
+    width: 100%;
+    max-width: 80%; /* Sets a max width for the container */
+    margin: auto;
+    padding: 20px;
+    margin-top: 6rem;
+    z-index: 2;
+}
+.contact-watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers watermark */
+    font-size: 12rem; /* Large text */
+    color: rgba(255, 253, 253, 0.1); /* Faded effect */
+    font-weight: 900;
+    z-index: -1;
+}
+.contact-container h1 {
+    font-size: 8rem;
+    color: #333; /* Darker text for better readability */
+    text-align: center;
+    margin-bottom: 20px;
+    z-index: 1;
+    margin-right: -100%;
+}
+.my-contact {
+    flex: 1; /* Allows section to grow evenly */
+    padding: 20px;
+    text-align: left;
+    padding-top: 4rem;
+}
+
+.contact-info h2 {
+    font-size: 1.2rem;
+    color: rgb(197, 194, 190);
+}
+
+.contact-info span {
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Adds spacing between icons */
+    margin-top: 100px;
+}
+
+.social-icons a {
+    color: #333; /* Default icon color */
+    font-size: 1.8rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #0073e6; /* Hover color */
+}
+
+/* Contact Form Section */
+.contact-form {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+   
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ffffff00;
+    border-radius: 5px;
+    background-color: #f9f9f983; /* Light background for inputs */
+}
+input::placeholder,
+textarea::placeholder {
+    color: rgb(27, 26, 26); /* Change placeholder color */
+    font-style: italic; /* Optional: Make it italic */
+    opacity: 1; /* Ensures full visibility */
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #005bb5;
+}
